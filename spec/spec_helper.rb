@@ -1,14 +1,6 @@
-require "bundler/setup"
-require "calculadora_calculante_gem"
+# spec/spec_helper.rb
 
-RSpec.configure do |config|
-  # Enable flags like --only-failures and --next-failure
-  config.example_status_persistence_file_path = ".rspec_status"
+require 'bundler/setup'
+Bundler.setup
 
-  # Disable RSpec exposing methods globally on `Module` and `main`
-  config.disable_monkey_patching!
-
-  config.expect_with :rspec do |c|
-    c.syntax = :expect
-  end
-end
+require 'calculadora_calculante_gem'

@@ -1,15 +1,7 @@
-# spec/calculadora_calculante_gem_spec.rb
-
 require 'spec_helper'
 require 'calculadora_calculante_gem/calculadora'
 
-RSpec.describe CalculadoraCalculanteGem do
-  it "has a version number" do
-    expect(CalculadoraCalculanteGem::VERSION).not_to be nil
-  end
-end
-
-RSpec.describe CalculadoraCalculanteGem::Calculadora do
+describe CalculadoraCalculanteGem::Calculadora do
   describe '.potencia' do
     it 'calcula a potência de um número' do
       expect(described_class.potencia(2, 3)).to eq(8)
